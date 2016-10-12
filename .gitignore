@@ -1,5 +1,11 @@
-.gradle
+# Ignore .idea
+.idea/
+
+# Ignore build
 build/
+
+# Ignore out
+out/
 
 # Ignore Gradle GUI config
 gradle-app.setting
