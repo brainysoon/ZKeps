@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class IndexController {
 
-    private String x = "";
-
     @RequestMapping(method = RequestMethod.GET)
     public String index() {
 
