@@ -4,6 +4,7 @@ import com.brainysoon.zkeps.data.KepsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -31,5 +32,14 @@ public class KepsController {
         model.addAttribute("keps", kepsRepository.findKeps(max, count));
 
         return "keps";
+    }
+
+    @RequestMapping(value = "/{kepId}", method = RequestMethod.GET)
+    public String kep(@PathVariable(value = "kepId") long kepId,
+                      Model model) {
+
+        model.addAttribute("kep", kepsRepository.findOne(kepId));
+
+        return "kep";
     }
 }

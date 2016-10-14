@@ -11,4 +11,7 @@ public interface KepsRepository {
 
     //获得一定数量的帖子
     List<Kep> findKeps(long max, long count);
+
+    //得到一个帖子
+    Kep findOne(long kepId);
 }

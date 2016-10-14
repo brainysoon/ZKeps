@@ -1,5 +1,6 @@
 package com.brainysoon.zkeps.web;
 
+import com.brainysoon.zkeps.data.MockKepsRepository;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -17,9 +18,13 @@ public class TestKepsController {
 
         KepsController kepsController = new KepsController();
 
+        kepsController.setKepsRepository(new MockKepsRepository());
+
         MockMvc mockMvc = standaloneSetup(kepsController)
                 .setViewResolvers(new WebConfig().viewResolver()).build();
 
         mockMvc.perform(get("/keps")).andExpect(view().name("keps"));
+
+        mockMvc.perform(get("/keps/2")).andExpect(view().name("kep"));
     }
 }

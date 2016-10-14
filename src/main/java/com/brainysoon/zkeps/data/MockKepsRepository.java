@@ -27,4 +27,10 @@ public class MockKepsRepository implements KepsRepository {
 
         return keps;
     }
+
+    @Override
+    public Kep findOne(long kepId) {
+
+        return new Kep(kepId, "我是第" + kepId + "条帖子", new Date(), "用户" + kepId);
+    }
 }
