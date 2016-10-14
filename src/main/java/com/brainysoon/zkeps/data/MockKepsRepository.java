@@ -1,7 +1,7 @@
 package com.brainysoon.zkeps.data;
 
 import com.brainysoon.zkeps.bean.Kep;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created by ken on 16-10-13.
  */
-@Component
+@Repository
 public class MockKepsRepository implements KepsRepository {
 
     @Override
