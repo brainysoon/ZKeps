@@ -29,6 +29,20 @@ public class MockKepsRepository implements KepsRepository {
     }
 
     @Override
+    public List<Kep> findPopKeps() {
+
+        List<Kep> popKeps = new ArrayList<>();
+
+        for (int i = 0; i < 5; i++) {
+
+            popKeps.add(new Kep(i, "暖贴" + i, "这是一个关于" + i + "条暖贴的故事",
+                    "故事内容", new Date(), "用户" + i));
+        }
+
+        return popKeps;
+    }
+
+    @Override
     public Kep findOne(long kepId) {
 
         return new Kep(kepId, "我是第" + kepId + "条帖子", new Date(), "用户" + kepId);

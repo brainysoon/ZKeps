@@ -14,4 +14,7 @@ public interface KepsRepository {
 
     //得到一个帖子
     Kep findOne(long kepId);
+
+    //得到比较热的几个暖贴
+    List<Kep> findPopKeps();
 }
