@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Created by ken on 16-10-14.
@@ -48,5 +49,18 @@ public class KeperController {
         model.addAttribute("keper", keperRepository.findKeper(userName));
 
         return "profile";
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String processLogin(@RequestParam(value = "userName", defaultValue = "null") String userName,
+                               @RequestParam(value = "password", defaultValue = "null") String password) {
+
+        return "redirect:/keper/" + userName;
+    }
+
+    @RequestMapping(value = "/login", method = RequestMethod.GET)
+    public String login() {
+
+        return "login";
     }
 }
