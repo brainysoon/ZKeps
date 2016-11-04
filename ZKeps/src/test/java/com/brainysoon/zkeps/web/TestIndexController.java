@@ -1,8 +1,8 @@
 package com.brainysoon.zkeps.web;
 
+import com.brainysoon.zkeps.data.MockKepsRepository;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
@@ -18,11 +18,9 @@ public class TestIndexController {
 
         IndexController indexController = new IndexController();
 
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/views/");
-        resolver.setSuffix(".jsp");
+        indexController.setKepsRepository(new MockKepsRepository());
 
-        MockMvc mockMvc = standaloneSetup(indexController).setViewResolvers(resolver).build();
+        MockMvc mockMvc = standaloneSetup(indexController).build();
 
         mockMvc.perform(get("/")).andExpect(view().name("index"));
     }
