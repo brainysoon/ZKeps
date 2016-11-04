@@ -21,12 +21,12 @@
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="#">首页</a></li>
-                <li><a href="#">暖贴</a></li>
-            <li><a href="#">照片</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">登录</a></li>
-            <li><a href="#">注册</a></li>
+            <li class="current_page_item"><a href="/">首页</a></li>
+            <li><a href="/keps">暖贴</a></li>
+            <li><a href="/photoes">照片</a></li>
+            <li><a href="/about">关于</a></li>
+            <li><a href="/login">登录</a></li>
+            <li><a href="/register">注册</a></li>
         </ul>
     </div>
     <!-- end #menu -->
@@ -39,21 +39,34 @@
         </div>
     </div>
 </div>
+<!-- end #header -->
 
 <div id="wrapper">
-    <!-- end #header -->
     <div id="page">
         <div id="page-bgtop">
             <div id="page-bgbtm">
 
                 <div id="content">
 
-                    <form method="post">
-                        用户名：<input type="text" name="userName"/> <br/>
-                        密码：<input type="password" name="userPassword"/><br/>
-                        确认密码:<input type="password" name="confirmPassword"/><br/>
+                    <form role="form" method="post">
 
-                        <input type="submit" value="立即注册"/>
+                        <div class="form-group">
+                            <label for="name">用户名：</label>
+                            <input type="text" name="userName" class="form-control" id="name" placeholder="用户名"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">密码：</label>
+                            <input type="password" name="userPassword" class="form-control" id="password"
+                                   placeholder="密码"/>
+                        </div>
+                        <div class="from-group">
+                            <label for="confirmPassword">确认密码:</label>
+                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
+                                   placeholder="确认密码"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="立即注册" class="form-control"/>
+                        </div>
                     </form>
                 </div>
                 <!-- end #content -->

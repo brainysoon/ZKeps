@@ -21,12 +21,12 @@
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="#">首页</a></li>
-            <li><a href="#">暖贴</a></li>
-            <li><a href="#">照片</a></li>
-            <li><a href="#">关于</a></li>
-            <li><a href="#">登录</a></li>
-            <li><a href="#">注册</a></li>
+            <li class="current_page_item"><a href="/">首页</a></li>
+            <li><a href="/keps">暖贴</a></li>
+            <li><a href="/photoes">照片</a></li>
+            <li><a href="/about">关于</a></li>
+            <li><a href="/login">登录</a></li>
+            <li><a href="/register">注册</a></li>
         </ul>
     </div>
     <!-- end #menu -->
