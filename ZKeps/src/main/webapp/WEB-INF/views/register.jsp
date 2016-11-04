@@ -15,6 +15,11 @@
     <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
     <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
 
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="/resources/js/bootstrap.min.js"></script>
+
     <title>注册新用户</title>
 </head>
 <body>
@@ -48,24 +53,44 @@
 
                 <div id="content">
 
-                    <form role="form" method="post">
+                    <form class="form-horizontal" role="form" method="post">
 
                         <div class="form-group">
-                            <label for="name">用户名：</label>
-                            <input type="text" name="userName" class="form-control" id="name" placeholder="用户名"/>
+                            <label for="userName" class="col-sm-2 control-label">用户名&ensp;&ensp;：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="userName" class="form-control" id="userName"
+                                       placeholder="用户名"/>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="password">密码：</label>
-                            <input type="password" name="userPassword" class="form-control" id="password"
-                                   placeholder="密码"/>
+                            <label for="email" class="col-sm-2 control-label">邮箱&ensp;&ensp;&ensp;&ensp;：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="email" class="form-control" id="email" placeholder="邮箱"/>
+                            </div>
                         </div>
-                        <div class="from-group">
-                            <label for="confirmPassword">确认密码:</label>
-                            <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
-                                   placeholder="确认密码"/>
-                        </div>
+
                         <div class="form-group">
-                            <input type="submit" value="立即注册" class="form-control"/>
+                            <label for="password" class="col-sm-2 control-label">密码&ensp;&ensp;&ensp;&ensp;：</label>
+                            <div class="col-sm-10">
+                                <input type="password" name="userPassword" class="form-control" id="password"
+                                       placeholder="密码"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirmPassword" class="col-sm-2 control-label">确认密码：</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="confirmPassword"
+                                       placeholder="确认密码"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">立即注册</button>
+                            </div>
                         </div>
                     </form>
                 </div>
