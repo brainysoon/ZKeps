@@ -15,6 +15,11 @@
     <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
     <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
 
+    <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- 包括所有已编译的插件 -->
+    <script src="/resources/js/bootstrap.min.js"></script>
+
     <title>登录</title>
 </head>
 <body>
@@ -48,19 +53,38 @@
 
                 <div id="content">
 
-                    <form role="form" method="post">
+                    <form class="form-horizontal" role="form" method="post">
 
                         <div class="form-group">
-                            <label for="name">用户名：</label>
-                            <input type="text" name="userName" class="form-control" id="name" placeholder="用户名"/>
+                            <label for="userName" class="col-sm-2 control-label">用户名：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="userName" class="form-control" id="userName"
+                                       placeholder="用户名/邮箱"/>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <label for="password">密码：</label>
-                            <input type="password" name="userPassword" class="form-control" id="password"
-                                   placeholder="密码"/>
+                            <label for="password" class="col-sm-2 control-label">密码：</label>
+                            <div class="col-sm-10">
+                                <input type="password" name="password" class="form-control" id="password"
+                                       placeholder="密码"/>
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <input type="submit" value="登录" class="form-control"/>
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" checked="true">请记住我
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">登录</button>
+                            </div>
                         </div>
                     </form>
                 </div>
