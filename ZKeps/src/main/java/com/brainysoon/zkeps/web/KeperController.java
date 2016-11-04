@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
  * Created by ken on 16-10-14.
  */
 @Controller
-@RequestMapping("/keper")
 public class KeperController {
 
     private MockKeperRepository keperRepository;
@@ -42,7 +41,7 @@ public class KeperController {
         }
     }
 
-    @RequestMapping(value = "/{userName}", method = RequestMethod.GET)
+    @RequestMapping(value = "/keper/{userName}", method = RequestMethod.GET)
     public String keper(@PathVariable(value = "userName") String userName,
                         Model model) {
 

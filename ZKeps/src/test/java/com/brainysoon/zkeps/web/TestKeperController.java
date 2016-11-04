@@ -20,6 +20,6 @@ public class TestKeperController {
         MockMvc mockMvc = standaloneSetup(keperController)
                 .setViewResolvers(new WebConfig().viewResolver()).build();
 
-        mockMvc.perform(get("/keper/register")).andExpect(view().name("register"));
+        mockMvc.perform(get("/register")).andExpect(view().name("register"));
     }
 }
