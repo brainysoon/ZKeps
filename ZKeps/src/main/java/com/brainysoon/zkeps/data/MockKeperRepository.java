@@ -16,6 +16,10 @@ public class MockKeperRepository implements KeperRepository {
 
     @Override
     public Keper findKeper(String userName) {
-        return new Keper(userName, "123456");
+        Keper keper = new Keper();
+
+        keper.setUserName(userName);
+
+        return keper;
     }
 }
