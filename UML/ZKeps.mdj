@@ -97,7 +97,7 @@
 													"containerExtending": false,
 													"left": 184,
 													"top": 237,
-													"width": 203,
+													"width": 204,
 													"height": 13,
 													"autoResize": false,
 													"underline": false,
@@ -135,7 +135,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 260,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -159,7 +159,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 275,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -183,7 +183,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 290,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -207,7 +207,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 305,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -231,7 +231,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 320,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -255,7 +255,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 335,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -279,7 +279,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 350,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														},
@@ -303,7 +303,7 @@
 															"containerExtending": false,
 															"left": 189,
 															"top": 365,
-															"width": 193,
+															"width": 194,
 															"height": 13,
 															"autoResize": false
 														}
@@ -319,7 +319,7 @@
 													"containerExtending": false,
 													"left": 184,
 													"top": 255,
-													"width": 203,
+													"width": 204,
 													"height": 128,
 													"autoResize": false
 												}
@@ -335,7 +335,7 @@
 											"containerExtending": false,
 											"left": 184,
 											"top": 232,
-											"width": 203,
+											"width": 204,
 											"height": 151,
 											"autoResize": false,
 											"nameLabel": {
@@ -361,7 +361,7 @@
 											"_parent": {
 												"$ref": "AAAAAAFYM6/zOy8ibY0="
 											},
-											"name": "username",
+											"name": "userName",
 											"documentation": "4-16 位长度，然后是 只能是英文，数字或则下划线，然后不能使数字开头。",
 											"type": "VARCHAR",
 											"length": "16",
@@ -406,7 +406,7 @@
 											"_parent": {
 												"$ref": "AAAAAAFYM6/zOy8ibY0="
 											},
-											"name": "nickname",
+											"name": "nickName",
 											"documentation": "用户的昵称",
 											"type": "VARCHAR",
 											"length": "16",
