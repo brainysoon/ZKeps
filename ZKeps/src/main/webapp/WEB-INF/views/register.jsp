@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -53,28 +54,29 @@
 
                 <div id="content">
 
-                    <form class="form-horizontal" role="form" method="post">
+                    <sf:form class="form-horizontal" role="form" method="post" commandName="keper">
 
                         <div class="form-group">
                             <label for="userName" class="col-sm-2 control-label">用户名&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <input type="text" name="userName" class="form-control" id="userName"
-                                       placeholder="用户名"/>
+                                <sf:input type="text" name="userName" class="form-control" id="userName"
+                                          placeholder="用户名" path="userName"/>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">邮箱&ensp;&ensp;&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <input type="text" name="email" class="form-control" id="email" placeholder="邮箱"/>
+                                <sf:input type="text" name="email" class="form-control" id="email"
+                                          placeholder="邮箱" path="email"/>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="password" class="col-sm-2 control-label">密码&ensp;&ensp;&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <input type="password" name="userPassword" class="form-control" id="password"
-                                       placeholder="密码"/>
+                                <sf:input type="password" name="password" class="form-control" id="password"
+                                          placeholder="密码" path="password"/>
                             </div>
                         </div>
 
@@ -92,7 +94,15 @@
                                 <button type="submit" class="btn btn-default">立即注册</button>
                             </div>
                         </div>
-                    </form>
+
+                        <div class="form-group">
+
+                            <div class="col-sm-2 control-label">
+
+                                <sf:errors path="*" element="div" cssClass="errors"/>
+                            </div>
+                        </div>
+                    </sf:form>
                 </div>
                 <!-- end #content -->
                 <div style="clear: both;">&nbsp;</div>

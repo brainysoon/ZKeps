@@ -3,6 +3,9 @@ package com.brainysoon.zkeps.config;
 import com.brainysoon.zkeps.web.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
+import javax.servlet.MultipartConfigElement;
+import javax.servlet.ServletRegistration;
+
 /**
  * Created by ken on 16-10-12.
  */
@@ -21,5 +24,11 @@ public class ZKepsWebAppInitializer extends AbstractAnnotationConfigDispatcherSe
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class<?>[]{WebConfig.class};
+    }
+
+    @Override
+    protected void customizeRegistration(ServletRegistration.Dynamic registration) {
+
+        registration.setMultipartConfig(new MultipartConfigElement("/var/local/tmp"));
     }
 }

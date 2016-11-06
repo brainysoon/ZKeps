@@ -5,10 +5,11 @@ import com.brainysoon.zkeps.data.MockKeperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.validation.Errors;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.File;
 
 /**
  * Created by ken on 16-10-14.
@@ -24,13 +25,20 @@ public class KeperController {
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
-    public String register() {
+    public String register(Model model) {
+
+        model.addAttribute(new Keper());
 
         return "register";
     }
 
     @RequestMapping(value = "/register", method = RequestMethod.POST)
-    public String processRegister(Keper keper) {
+    public String processRegister(Keper keper, Errors errors) {
+
+        if (errors.hasErrors()) {
+
+            return "register";
+        }
 
         if (keperRepository.processRegister(keper)) {
 
@@ -61,5 +69,27 @@ public class KeperController {
     public String login() {
 
         return "login";
+    }
+
+    @RequestMapping(value = "/detailRegister", method = RequestMethod.POST)
+    public String detailRegister(@RequestPart("avator") MultipartFile avator,
+                                 @RequestParam(value = "nickName", defaultValue = "keper") String nickName,
+                                 @RequestParam(value = "motto", defaultValue = "i good man") String motto) {
+
+        try {
+            avator.transferTo(
+                    new File("/var/local/avators/" + avator.getOriginalFilename())
+            );
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        return "index";
+    }
+
+    @RequestMapping(value = "/detailRegister", method = RequestMethod.GET)
+    public String showDetailRegister() {
+
+        return "detailRegister";
     }
 }
