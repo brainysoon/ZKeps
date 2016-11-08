@@ -8,51 +8,68 @@ import java.util.Date;
 public class Kep {
 
     private long kepId;
-    private String kepMsg;
-    private Date kepTime;
     private String userName;
-    private String kepContent;
+    private Date kepTime;
     private String kepTitle;
+    private String kepMsg;
+    private String kepContent;
+    private int stars;
 
-    public Kep(long kepId, String kepMsg, Date kepTime, String userName) {
-
+    //setter
+    public void setKepId(long kepId) {
         this.kepId = kepId;
-        this.kepMsg = kepMsg;
-        this.kepTime = kepTime;
+    }
+
+    public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    public Kep(long kepId, String kepTitle, String kepMsg, String kepContent,
-               Date kepTime, String userName) {
+    public void setKepTime(Date kepTime) {
+        this.kepTime = kepTime;
+    }
 
-        this(kepId, kepMsg, kepTime, userName);
-
+    public void setKepTitle(String kepTitle) {
         this.kepTitle = kepTitle;
+    }
+
+    public void setKepMsg(String kepMsg) {
+        this.kepMsg = kepMsg;
+    }
+
+    public void setKepContent(String kepContent) {
         this.kepContent = kepContent;
     }
 
-    //get
+    public void setStars(int stars) {
+        this.stars = stars;
+    }
+
+    //getter
     public long getKepId() {
-        return this.kepId;
-    }
-
-    public String getKepMsg() {
-        return this.kepMsg;
-    }
-
-    public Date getKepTime() {
-        return this.kepTime;
+        return kepId;
     }
 
     public String getUserName() {
-        return this.userName;
+        return userName;
     }
 
-    public String getKepContent() {
-        return this.kepContent;
+    public Date getKepTime() {
+        return kepTime;
     }
 
     public String getKepTitle() {
-        return this.kepTitle;
+        return kepTitle;
+    }
+
+    public String getKepMsg() {
+        return kepMsg;
+    }
+
+    public String getKepContent() {
+        return kepContent;
+    }
+
+    public int getStars() {
+        return stars;
     }
 }
