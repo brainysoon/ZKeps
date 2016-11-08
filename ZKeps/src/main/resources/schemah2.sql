@@ -10,3 +10,15 @@ CREATE TABLE keper (
   stars    INTEGER,
   slead    INTEGER
 );
+
+DROP TABLE IF EXISTS keps;
+
+CREATE TABLE keps (
+  kepId      INTEGER     NOT NULL PRIMARY KEY,
+  userName   VARCHAR(16) NOT NULL,
+  kepTime    DATE        NOT NULL,
+  kepTitle   VARCHAR(30),
+  kepMsg     VARCHAR(300),
+  kepContent VARCHAR(1000),
+  stars      INTEGER
+);

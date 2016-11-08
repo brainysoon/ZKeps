@@ -10,3 +10,13 @@ CREATE TABLE keper (
   stars    INTEGER(4),
   slead    INTEGER(1)
 );
+
+CREATE TABLE keps (
+  kepId      INTEGER     NOT NULL PRIMARY KEY,
+  userName   VARCHAR(16) NOT NULL,
+  kepTime    DATA        NOT NULL,
+  kepTitle   VARCHAR(30),
+  kepMsg     VARCHAR(300),
+  kepContent VARCHAR(1000),
+  stars      INTEGER
+);
