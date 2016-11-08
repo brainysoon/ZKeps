@@ -12,4 +12,7 @@ public interface KeperRepository {
 
     //找到用户
     Keper findKeper(String userName);
+
+    //计数当前用户总数
+    long countUser();
 }
