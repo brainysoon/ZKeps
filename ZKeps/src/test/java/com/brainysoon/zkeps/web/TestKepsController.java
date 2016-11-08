@@ -1,8 +1,8 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Kep;
-import com.brainysoon.zkeps.data.KepsRepository;
-import com.brainysoon.zkeps.data.MockKepsRepository;
+import com.brainysoon.zkeps.dao.KepsRepository;
+import com.brainysoon.zkeps.dao.mock.MockKepsRepository;
 import org.junit.Test;
 import org.springframework.test.web.servlet.MockMvc;
 

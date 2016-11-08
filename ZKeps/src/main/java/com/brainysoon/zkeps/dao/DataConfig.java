@@ -1,4 +1,4 @@
-package com.brainysoon.zkeps.data;
+package com.brainysoon.zkeps.dao;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

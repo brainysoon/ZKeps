@@ -1,7 +1,7 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Keper;
-import com.brainysoon.zkeps.data.MockKeperRepository;
+import com.brainysoon.zkeps.dao.mock.MockKeperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

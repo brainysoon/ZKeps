@@ -1,6 +1,7 @@
-package com.brainysoon.zkeps.data;
+package com.brainysoon.zkeps.dao.h2;
 
 import com.brainysoon.zkeps.bean.Keper;
+import com.brainysoon.zkeps.dao.KeperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcOperations;
 import org.springframework.jdbc.core.RowMapper;

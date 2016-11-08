@@ -1,8 +1,8 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Keper;
-import com.brainysoon.zkeps.data.DataConfig;
-import com.brainysoon.zkeps.data.KeperRepository;
+import com.brainysoon.zkeps.dao.DataConfig;
+import com.brainysoon.zkeps.dao.KeperRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

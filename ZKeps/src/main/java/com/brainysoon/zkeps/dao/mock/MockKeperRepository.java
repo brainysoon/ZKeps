@@ -1,6 +1,7 @@
-package com.brainysoon.zkeps.data;
+package com.brainysoon.zkeps.dao.mock;
 
 import com.brainysoon.zkeps.bean.Keper;
+import com.brainysoon.zkeps.dao.KeperRepository;
 
 /**
  * Created by ken on 16-10-14.

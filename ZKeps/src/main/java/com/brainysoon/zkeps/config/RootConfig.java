@@ -1,6 +1,6 @@
 package com.brainysoon.zkeps.config;
 
-import com.brainysoon.zkeps.data.DataConfig;
+import com.brainysoon.zkeps.dao.DataConfig;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 

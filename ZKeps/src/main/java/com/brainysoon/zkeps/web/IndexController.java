@@ -1,6 +1,6 @@
 package com.brainysoon.zkeps.web;
 
-import com.brainysoon.zkeps.data.KepsRepository;
+import com.brainysoon.zkeps.dao.KepsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
