@@ -12,7 +12,7 @@ CREATE TABLE keper (
 );
 
 CREATE TABLE keps (
-  kepId      INTEGER     NOT NULL PRIMARY KEY,
+  kepId      VARCHAR(20)     NOT NULL PRIMARY KEY,
   userName   VARCHAR(16) NOT NULL,
   kepTime    DATA        NOT NULL,
   kepTitle   VARCHAR(30),

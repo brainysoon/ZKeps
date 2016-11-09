@@ -14,7 +14,7 @@ CREATE TABLE keper (
 DROP TABLE IF EXISTS keps;
 
 CREATE TABLE keps (
-  kepId      INTEGER     NOT NULL PRIMARY KEY,
+  kepId      VARCHAR(20)    NOT NULL PRIMARY KEY,
   userName   VARCHAR(16) NOT NULL,
   kepTime    DATE        NOT NULL,
   kepTitle   VARCHAR(30),

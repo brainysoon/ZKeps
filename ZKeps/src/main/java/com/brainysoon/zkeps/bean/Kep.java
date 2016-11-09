@@ -7,7 +7,7 @@ import java.util.Date;
  */
 public class Kep {
 
-    private long kepId;
+    private String kepId;
     private String userName;
     private Date kepTime;
     private String kepTitle;
@@ -16,7 +16,7 @@ public class Kep {
     private int stars;
 
     //setter
-    public void setKepId(long kepId) {
+    public void setKepId(String kepId) {
         this.kepId = kepId;
     }
 
@@ -45,7 +45,7 @@ public class Kep {
     }
 
     //getter
-    public long getKepId() {
+    public String getKepId() {
         return kepId;
     }
 
