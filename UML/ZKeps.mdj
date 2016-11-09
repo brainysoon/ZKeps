@@ -743,7 +743,8 @@
 												"$ref": "AAAAAAFYQ2/3Q/CGeY8="
 											},
 											"name": "kepId",
-											"type": "INTEGER",
+											"type": "VARCHAR",
+											"length": "20",
 											"primaryKey": true,
 											"foreignKey": false,
 											"nullable": true,
