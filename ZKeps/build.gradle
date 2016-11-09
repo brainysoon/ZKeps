@@ -14,7 +14,7 @@ dependencies {
 
     compile "org.springframework:spring-webmvc:$springVersion"
     compile "org.springframework:spring-jdbc:$springVersion"
-//    compile "mysql:mysql-connector-java:$mysqlConnectorVersion"
+    compile group: 'mysql', name: 'mysql-connector-java', version: '6.0.2'
     compile "com.h2database:h2:$h2Version"
 
     compile "javax.servlet:jstl:$jstlVersion"

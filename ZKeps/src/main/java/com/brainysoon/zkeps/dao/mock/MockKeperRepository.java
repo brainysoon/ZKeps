@@ -3,6 +3,8 @@ package com.brainysoon.zkeps.dao.mock;
 import com.brainysoon.zkeps.bean.Keper;
 import com.brainysoon.zkeps.dao.KeperRepository;
 
+import java.util.List;
+
 /**
  * Created by ken on 16-10-14.
  */
@@ -26,5 +28,10 @@ public class MockKeperRepository implements KeperRepository {
     @Override
     public long countUser() {
         return 0;
+    }
+
+    @Override
+    public List<Keper> findAllKepers() {
+        return null;
     }
 }

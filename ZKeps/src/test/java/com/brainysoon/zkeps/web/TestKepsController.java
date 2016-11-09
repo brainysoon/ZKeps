@@ -1,15 +1,22 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Kep;
+import com.brainysoon.zkeps.dao.DataConfig;
 import com.brainysoon.zkeps.dao.KepsRepository;
 import com.brainysoon.zkeps.dao.mock.MockKepsRepository;
+import com.brainysoon.zkeps.utils.DateUtils;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -20,7 +27,16 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.standal
 /**
  * Created by ken on 16-10-13.
  */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(classes = DataConfig.class)
 public class TestKepsController {
+
+    private KepsRepository kepsRepository;
+
+    @Autowired
+    public void setKepsRepository(KepsRepository kepsRepository) {
+        this.kepsRepository = kepsRepository;
+    }
 
     @Test
     public void testKepsController() throws Exception {
@@ -64,9 +80,27 @@ public class TestKepsController {
 
         for (long i = max; i <= max + count; i++) {
 
-            keps.add(new Kep(i, "第" + i + "条帖子", new Date(), "用户:" + i));
+            keps.add(new Kep());
         }
 
         return keps;
+    }
+
+    @Test
+    public void addKep() {
+
+        Kep kep = new Kep();
+
+        kep.setKepId(DateUtils.getInstance().getKepIdDateInfo());
+        kep.setUserName("brainy");
+        kep.setKepTime(new Date());
+        kep.setKepTitle("test");
+        kep.setKepMsg("test");
+        kep.setKepContent("test");
+        kep.setStars(0);
+
+        kepsRepository.addKep(kep);
+
+        assertEquals(1, kepsRepository.countKeps());
     }
 }

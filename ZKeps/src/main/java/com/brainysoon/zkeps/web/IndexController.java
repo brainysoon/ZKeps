@@ -18,7 +18,6 @@ public class IndexController {
 
     @Autowired
     public void setKepsRepository(KepsRepository kepsRepository) {
-
         this.kepsRepository = kepsRepository;
     }
 
@@ -28,5 +27,11 @@ public class IndexController {
         model.addAttribute("popKeps", kepsRepository.findPopKeps());
 
         return "index";
+    }
+
+    @RequestMapping(value = "/about", method = RequestMethod.GET)
+    public String about() {
+
+        return "about";
     }
 }

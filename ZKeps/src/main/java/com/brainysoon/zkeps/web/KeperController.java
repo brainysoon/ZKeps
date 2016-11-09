@@ -1,7 +1,7 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Keper;
-import com.brainysoon.zkeps.dao.mock.MockKeperRepository;
+import com.brainysoon.zkeps.dao.KeperRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,12 +17,8 @@ import java.io.File;
 @Controller
 public class KeperController {
 
-    private MockKeperRepository keperRepository;
-
     @Autowired
-    public void setKeperRepository(MockKeperRepository keperRepository) {
-        this.keperRepository = keperRepository;
-    }
+    private KeperRepository keperRepository;
 
     @RequestMapping(value = "/register", method = RequestMethod.GET)
     public String register(Model model) {
@@ -91,5 +87,11 @@ public class KeperController {
     public String showDetailRegister() {
 
         return "detailRegister";
+    }
+
+    @RequestMapping(value = "/kepers", method = RequestMethod.GET)
+    public String kepers(Model model) {
+
+        return "kepers";
     }
 }

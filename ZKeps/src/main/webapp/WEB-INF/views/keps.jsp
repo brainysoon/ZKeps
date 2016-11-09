@@ -53,7 +53,7 @@
 
                 <div id="content">
 
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" role="form" method="post">
 
                         <div class="form-group">
                             <label for="kepTitle">标题</label>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default">&ensp;&ensp;登录&ensp;&ensp;</button>
+                            <button type="submit" class="btn btn-default">&ensp;&ensp;发帖&ensp;&ensp;</button>
                         </div>
                     </form>
 
