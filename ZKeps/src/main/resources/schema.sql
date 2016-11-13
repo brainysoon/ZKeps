@@ -11,10 +11,12 @@ CREATE TABLE keper (
   slead    INTEGER(1)
 );
 
+DROP TABLE IF EXISTS keps;
+
 CREATE TABLE keps (
   kepId      VARCHAR(20)     NOT NULL PRIMARY KEY,
   userName   VARCHAR(16) NOT NULL,
-  kepTime    DATA        NOT NULL,
+  kepTime    DATE        NOT NULL,
   kepTitle   VARCHAR(30),
   kepMsg     VARCHAR(300),
   kepContent VARCHAR(1000),
