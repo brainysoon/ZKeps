@@ -323,7 +323,8 @@
 													"underline": false,
 													"text": "«business actor»",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -348,7 +349,8 @@
 													"underline": false,
 													"text": "Keper",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -373,7 +375,8 @@
 													"underline": false,
 													"text": "(from Business Actor)",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -397,7 +400,8 @@
 													"autoResize": false,
 													"underline": false,
 													"horizontalAlignment": 1,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -608,7 +612,8 @@
 													"underline": false,
 													"text": "«business use case»",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -633,7 +638,8 @@
 													"underline": false,
 													"text": "维护用户信息",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -658,7 +664,8 @@
 													"underline": false,
 													"text": "(from Business Use Case)",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -682,7 +689,8 @@
 													"autoResize": false,
 													"underline": false,
 													"horizontalAlignment": 1,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -920,7 +928,8 @@
 													"underline": false,
 													"text": "«business use case»",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -945,7 +954,8 @@
 													"underline": false,
 													"text": "发布暖贴",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -970,7 +980,8 @@
 													"underline": false,
 													"text": "(from Business Use Case)",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -994,7 +1005,8 @@
 													"autoResize": false,
 													"underline": false,
 													"horizontalAlignment": 1,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -1232,7 +1244,8 @@
 													"underline": false,
 													"text": "«business use case»",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -1257,7 +1270,8 @@
 													"underline": false,
 													"text": "评论暖贴",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -1282,7 +1296,8 @@
 													"underline": false,
 													"text": "(from Business Use Case)",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "LabelView",
@@ -1306,7 +1321,8 @@
 													"autoResize": false,
 													"underline": false,
 													"horizontalAlignment": 1,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -1542,7 +1558,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1575,7 +1592,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1608,7 +1626,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1641,7 +1660,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1674,7 +1694,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1707,7 +1728,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1740,7 +1762,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1773,7 +1796,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1806,7 +1830,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
@@ -1954,7 +1979,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -1987,7 +2013,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2020,7 +2047,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2053,7 +2081,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2086,7 +2115,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2119,7 +2149,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2152,7 +2183,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2185,7 +2217,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2218,7 +2251,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
@@ -2366,7 +2400,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2399,7 +2434,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2432,7 +2468,8 @@
 											"edgePosition": 1,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2465,7 +2502,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2498,7 +2536,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2531,7 +2570,8 @@
 											"edgePosition": 2,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2564,7 +2604,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2597,7 +2638,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2630,7 +2672,8 @@
 											"edgePosition": 0,
 											"underline": false,
 											"horizontalAlignment": 2,
-											"verticalAlignment": 5
+											"verticalAlignment": 5,
+											"wordWrap": false
 										},
 										{
 											"_type": "UMLQualifierCompartmentView",
@@ -2798,7 +2841,8 @@
 															"underline": false,
 															"text": "Keper",
 															"horizontalAlignment": 2,
-															"verticalAlignment": 3
+															"verticalAlignment": 3,
+															"wordWrap": false
 														}
 													],
 													"containedViews": [
@@ -2858,7 +2902,8 @@
 															"underline": false,
 															"text": "Zker",
 															"horizontalAlignment": 2,
-															"verticalAlignment": 3
+															"verticalAlignment": 3,
+															"wordWrap": false
 														}
 													],
 													"containedViews": [
@@ -2927,7 +2972,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -2952,7 +2998,8 @@
 																	"underline": false,
 																	"text": "注册",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -2977,7 +3024,8 @@
 																	"underline": false,
 																	"text": "(from Keper)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3001,7 +3049,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -3098,7 +3147,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3123,7 +3173,8 @@
 																	"underline": false,
 																	"text": "登录",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3148,7 +3199,8 @@
 																	"underline": false,
 																	"text": "(from Keper)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3172,7 +3224,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -3296,7 +3349,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3321,7 +3375,8 @@
 																	"underline": false,
 																	"text": "发布暖贴",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3346,7 +3401,8 @@
 																	"underline": false,
 																	"text": "(from Keper)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3370,7 +3426,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -3467,7 +3524,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3492,7 +3550,8 @@
 																	"underline": false,
 																	"text": "评论",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3517,7 +3576,8 @@
 																	"underline": false,
 																	"text": "(from Zker)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3541,7 +3601,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -3638,7 +3699,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3663,7 +3725,8 @@
 																	"underline": false,
 																	"text": "回复评论",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3688,7 +3751,8 @@
 																	"underline": false,
 																	"text": "(from Keper)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -3712,7 +3776,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -3808,7 +3873,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -3841,7 +3907,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -3874,7 +3941,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -3948,7 +4016,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -3981,7 +4050,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4014,7 +4084,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4088,7 +4159,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4121,7 +4193,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4154,7 +4227,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4228,7 +4302,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4261,7 +4336,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4294,7 +4370,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4368,7 +4445,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4401,7 +4479,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4434,7 +4513,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4508,7 +4588,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4541,7 +4622,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4574,7 +4656,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4672,7 +4755,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4705,7 +4789,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -4738,7 +4823,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -4813,7 +4899,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -4838,7 +4925,8 @@
 																	"underline": false,
 																	"text": "顶贴",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -4863,7 +4951,8 @@
 																	"underline": false,
 																	"text": "(from Zker)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -4887,7 +4976,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -4987,7 +5077,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5012,7 +5103,8 @@
 																	"underline": false,
 																	"text": "注册",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5037,7 +5129,8 @@
 																	"underline": false,
 																	"text": "(from Zker)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5061,7 +5154,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -5158,7 +5252,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5183,7 +5278,8 @@
 																	"underline": false,
 																	"text": "登录",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5208,7 +5304,8 @@
 																	"underline": false,
 																	"text": "(from Zker)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -5232,7 +5329,8 @@
 																	"autoResize": false,
 																	"underline": false,
 																	"horizontalAlignment": 1,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -5328,7 +5426,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5361,7 +5460,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5394,7 +5494,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -5468,7 +5569,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5501,7 +5603,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5534,7 +5637,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -5608,7 +5712,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5641,7 +5746,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														},
 														{
 															"_type": "EdgeLabelView",
@@ -5674,7 +5780,8 @@
 															"edgePosition": 1,
 															"underline": false,
 															"horizontalAlignment": 2,
-															"verticalAlignment": 5
+															"verticalAlignment": 5,
+															"wordWrap": false
 														}
 													],
 													"visible": true,
@@ -6276,7 +6383,8 @@
 																	"underline": false,
 																	"text": "KeperSequenceDiagram",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "LabelView",
@@ -6301,7 +6409,8 @@
 																	"underline": false,
 																	"text": "interaction",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																}
 															],
 															"visible": true,
@@ -6367,7 +6476,8 @@
 																			"autoResize": false,
 																			"underline": false,
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6392,7 +6502,8 @@
 																			"underline": false,
 																			"text": "Lifeline1: Keper",
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6417,7 +6528,8 @@
 																			"underline": false,
 																			"text": "(from Interaction1)",
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6441,7 +6553,8 @@
 																			"autoResize": false,
 																			"underline": false,
 																			"horizontalAlignment": 1,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		}
 																	],
 																	"visible": true,
@@ -6565,7 +6678,8 @@
 																			"autoResize": false,
 																			"underline": false,
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6588,9 +6702,10 @@
 																			"height": 13,
 																			"autoResize": false,
 																			"underline": false,
-																			"text": "Lifeline2: 管理员",
+																			"text": "Lifeline2",
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6603,7 +6718,7 @@
 																			"lineColor": "#000000",
 																			"fillColor": "#ffffff",
 																			"fontColor": "#000000",
-																			"font": "Arial;13;0",
+																			"font": "Arial;11.700000000000001;0",
 																			"showShadow": true,
 																			"containerChangeable": false,
 																			"containerExtending": false,
@@ -6615,7 +6730,8 @@
 																			"underline": false,
 																			"text": "(from Interaction1)",
 																			"horizontalAlignment": 2,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		},
 																		{
 																			"_type": "LabelView",
@@ -6639,7 +6755,8 @@
 																			"autoResize": false,
 																			"underline": false,
 																			"horizontalAlignment": 1,
-																			"verticalAlignment": 5
+																			"verticalAlignment": 5,
+																			"wordWrap": false
 																		}
 																	],
 																	"visible": true,
@@ -6763,7 +6880,8 @@
 																	"underline": false,
 																	"text": "1 : 天使注册(天使信息)",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "EdgeLabelView",
@@ -6796,7 +6914,8 @@
 																	"edgePosition": 1,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "EdgeLabelView",
@@ -6829,7 +6948,8 @@
 																	"edgePosition": 1,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "UMLActivationView",
@@ -6930,7 +7050,8 @@
 																	"underline": false,
 																	"text": "2 : 返回注册结果",
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "EdgeLabelView",
@@ -6963,7 +7084,8 @@
 																	"edgePosition": 1,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "EdgeLabelView",
@@ -6996,7 +7118,8 @@
 																	"edgePosition": 1,
 																	"underline": false,
 																	"horizontalAlignment": 2,
-																	"verticalAlignment": 5
+																	"verticalAlignment": 5,
+																	"wordWrap": false
 																},
 																{
 																	"_type": "UMLActivationView",
@@ -7162,9 +7285,6 @@
 											"visibility": "public",
 											"isStatic": false,
 											"isLeaf": false,
-											"type": {
-												"$ref": "AAAAAAFYYoQyb/NO7K0="
-											},
 											"isReadOnly": false,
 											"isOrdered": false,
 											"isUnique": false,
@@ -7310,7 +7430,8 @@
 													"underline": false,
 													"text": "Keper",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "ERDColumnCompartmentView",
@@ -7585,7 +7706,8 @@
 													"underline": false,
 													"text": "Kep",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "ERDColumnCompartmentView",
@@ -8147,7 +8269,8 @@
 													"underline": false,
 													"text": "kep",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "ERDColumnCompartmentView",
@@ -8398,7 +8521,8 @@
 													"underline": false,
 													"text": "comment",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "ERDColumnCompartmentView",
@@ -8553,7 +8677,8 @@
 													"underline": false,
 													"text": "keper",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "ERDColumnCompartmentView",
@@ -8834,7 +8959,8 @@
 													"underline": false,
 													"text": "发布暖贴",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -8864,7 +8990,8 @@
 													"edgePosition": 2,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -8894,7 +9021,8 @@
 													"edgePosition": 0,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -8963,7 +9091,8 @@
 													"underline": false,
 													"text": "拥有评论",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -8993,7 +9122,8 @@
 													"edgePosition": 2,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -9023,7 +9153,8 @@
 													"edgePosition": 0,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -9092,7 +9223,8 @@
 													"underline": false,
 													"text": "评论",
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -9122,7 +9254,8 @@
 													"edgePosition": 2,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												},
 												{
 													"_type": "EdgeLabelView",
@@ -9152,7 +9285,8 @@
 													"edgePosition": 0,
 													"underline": false,
 													"horizontalAlignment": 2,
-													"verticalAlignment": 5
+													"verticalAlignment": 5,
+													"wordWrap": false
 												}
 											],
 											"visible": true,
@@ -9236,7 +9370,7 @@
 											"length": "20",
 											"primaryKey": true,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": true
 										},
 										{
@@ -9253,7 +9387,7 @@
 											"referenceTo": {
 												"$ref": "AAAAAAFYYqP9YQz6Q4A="
 											},
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9266,7 +9400,7 @@
 											"type": "TIME",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9280,7 +9414,7 @@
 											"length": "30",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9294,7 +9428,7 @@
 											"length": "300",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9308,7 +9442,7 @@
 											"length": "1000",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9322,7 +9456,7 @@
 											"length": "4",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										}
 									]
@@ -9346,7 +9480,7 @@
 											"length": "20",
 											"primaryKey": true,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": true
 										},
 										{
@@ -9363,7 +9497,7 @@
 											"referenceTo": {
 												"$ref": "AAAAAAFYYqnO9g1LLnU="
 											},
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9377,7 +9511,7 @@
 											"length": "300",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										}
 									]
@@ -9465,7 +9599,7 @@
 											"length": "16",
 											"primaryKey": true,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": true
 										},
 										{
@@ -9479,7 +9613,7 @@
 											"length": "16",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9493,7 +9627,7 @@
 											"length": "30",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": true,
+											"nullable": false,
 											"unique": false
 										},
 										{
@@ -9507,7 +9641,7 @@
 											"length": "16",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9521,7 +9655,7 @@
 											"length": "150",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9535,7 +9669,7 @@
 											"length": "100",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9549,7 +9683,7 @@
 											"length": "4",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										},
 										{
@@ -9564,7 +9698,7 @@
 											"length": "1",
 											"primaryKey": false,
 											"foreignKey": false,
-											"nullable": false,
+											"nullable": true,
 											"unique": false
 										}
 									]
