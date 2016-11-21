@@ -5,7 +5,7 @@ package com.brainysoon.zkeps.bean;
  */
 public class Keper {
 
-    private String userName;
+    private String keperName;
     private String password;
     private String email;
     private String nickName;
@@ -14,42 +14,9 @@ public class Keper {
     private int stars;
     private int slead;
 
-    //setter
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setNickName(String nickName) {
-        this.nickName = nickName;
-    }
-
-    public void setMotto(String motto) {
-        this.motto = motto;
-    }
-
-    public void setAvator(String avator) {
-        this.avator = avator;
-    }
-
-    public void setStars(int stars) {
-        this.stars = stars;
-    }
-
-    public void setSlead(int slead) {
-        this.slead = slead;
-    }
-
     //getter
-    public String getUserName() {
-        return userName;
+    public String getKeperName() {
+        return keperName;
     }
 
     public String getPassword() {
@@ -78,5 +45,39 @@ public class Keper {
 
     public int getSlead() {
         return slead;
+    }
+
+    //setter
+
+    public void setKeperName(String keperName) {
+        this.keperName = keperName;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public void setMotto(String motto) {
+        this.motto = motto;
+    }
+
+    public void setAvator(String avator) {
+        this.avator = avator;
+    }
+
+    public void setStars(int stars) {
+        this.stars = stars;
+    }
+
+    public void setSlead(int slead) {
+        this.slead = slead;
     }
 }

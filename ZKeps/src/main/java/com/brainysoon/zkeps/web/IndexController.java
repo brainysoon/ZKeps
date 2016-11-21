@@ -1,6 +1,6 @@
 package com.brainysoon.zkeps.web;
 
-import com.brainysoon.zkeps.dao.KepsRepository;
+import com.brainysoon.zkeps.service.KepsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,17 +14,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/")
 public class IndexController {
 
-    private KepsRepository kepsRepository;
+    private KepsService kepsService;
 
     @Autowired
-    public void setKepsRepository(KepsRepository kepsRepository) {
-        this.kepsRepository = kepsRepository;
+    public void setKepsService(KepsService kepsService) {
+        this.kepsService = kepsService;
     }
 
     @RequestMapping(method = RequestMethod.GET)
     public String index(Model model) {
 
-        model.addAttribute("popKeps", kepsRepository.findPopKeps());
 
         return "index";
     }

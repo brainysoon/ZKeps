@@ -52,7 +52,7 @@
                             <h2 class="title"><a href="#"><c:out value="${popKeps.kepTitle}"/></a></h2>
                             <p class="meta">
                                 <span class="date"><c:out value="${popKeps.kepTime}"/></span>
-                                <span class="posted">作者：<a href="#"><c:out value="${popKeps.userName}"/></a> </span>
+                                <span class="posted">作者：<a href="#"><c:out value="${popKeps.keperName}"/></a> </span>
                             </p>
 
                             <div style="clear: both;">&nbsp;</div>

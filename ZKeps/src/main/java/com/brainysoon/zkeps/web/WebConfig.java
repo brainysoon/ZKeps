@@ -1,6 +1,7 @@
 package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.dao.KepsRepository;
+import com.brainysoon.zkeps.service.KepsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +20,7 @@ import java.io.IOException;
  */
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackageClasses = {WebConfig.class, KepsRepository.class})
+@ComponentScan(basePackageClasses = {WebConfig.class, KepsRepository.class, KepsService.class})
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Bean
