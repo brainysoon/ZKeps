@@ -15,7 +15,6 @@ dependencies {
     compile "org.springframework:spring-webmvc:$springVersion"
     compile "org.springframework:spring-jdbc:$springVersion"
     compile "mysql:mysql-connector-java:$mysqlConnectorVersion"
-    compile "com.h2database:h2:$h2Version"
 
     compile "javax.servlet:jstl:$jstlVersion"
     compile "org.hibernate:hibernate-validator:$hibernateValidatorVersion"
