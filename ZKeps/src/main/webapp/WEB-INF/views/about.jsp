@@ -13,7 +13,7 @@
     <meta name="description" content="They Keep Us Alive !"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
-    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/resources/css/default.css" rel="stylesheet" type="text/css" media="screen"/>
 
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 
@@ -26,12 +26,12 @@
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="/">首页</a></li>
+            <li><a href="/">首页</a></li>
             <li><a href="/keps">发帖</a></li>
             <li><a href="/kepers">成员</a></li>
             <li><a href="/login">登录</a></li>
             <li><a href="/register">注册</a></li>
-            <li><a href="/about">关于</a></li>
+            <li class="current_page_item"><a href="/about">关于</a></li>
         </ul>
     </div>
     <!-- end #menu -->
@@ -52,8 +52,9 @@
             <div id="page-bgbtm">
 
                 <div id="content">
-
-
+                    <p>这个发帖子的小型网站，是我在学习Spring的时候的一个实例，不足的地方还请大家多多指教！</p>
+                    <p>Email:brainysoon@163.com</p>
+                    <p>QQ:863744353</p>
                 </div>
                 <!-- end #content -->
                 <div style="clear: both;">&nbsp;</div>
