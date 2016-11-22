@@ -13,15 +13,14 @@
     <meta name="description" content="They Keep Us Alive !"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <title>ZKeps</title>
-    <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
-    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/resources/css/default.css" rel="stylesheet" type="text/css" media="screen"/>
 
 </head>
 <body>
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="/">首页</a></li>
+            <li class="current_index_item"><a href="/">首页</a></li>
             <li><a href="/keps">发帖</a></li>
             <li><a href="/kepers">成员</a></li>
             <li><a href="/login">登录</a></li>
@@ -41,95 +40,48 @@
 <div id="wrapper">
     <!-- end #header -->
     <div id="page">
-        <div id="page-bgtop">
-            <div id="page-bgbtm">
 
-                <div id="content">
+        <div id="content">
 
-                    <c:forEach items="${popKeps}" var="popKeps">
-                        <div class="post">
+            <c:forEach items="${popKeps}" var="popKeps">
+                <div class="post">
 
-                            <h2 class="title"><a href="#"><c:out value="${popKeps.kepTitle}"/></a></h2>
-                            <p class="meta">
-                                <span class="date"><c:out value="${popKeps.kepTime}"/></span>
-                                <span class="posted">作者：<a href="#"><c:out value="${popKeps.keperName}"/></a> </span>
-                            </p>
-
-                            <div style="clear: both;">&nbsp;</div>
-
-                            <div class="entry">
-                                <p>
-                                    <c:out value="${popKeps.kepMsg}"/>
-                                </p>
-
-                                <p class="links"><a href="#" class="button">阅读更多</a></p>
-                            </div>
-                        </div>
-                    </c:forEach>
+                    <h2 class="title">主题：<a href="#"><c:out value="${popKeps.kepTitle}"/></a></h2>
+                    <p class="meta">
+                        <span class="date">发布时间：<c:out value="${popKeps.kepTime}"/></span>
+                        <span class="posted">作者：<a href="#"><c:out value="${popKeps.keperName}"/></a> </span>
+                    </p>
+                    <div style="clear: both;">&nbsp;</div>
+                    <div class="entry">
+                        <p>摘要：<c:out value="${popKeps.kepMsg}"/></p>
+                        <p>热度：<c:out value="${popKeps.stars}"/></p>
+                        <p class="links"><a href="#" class="button">阅读更多</a></p>
+                    </div>
                 </div>
-                <!-- end #content -->
-
-                <div id="sidebar">
-                    <ul>
-                        <li>
-                            <h2>搜索暖贴</h2>
-                            <div id="search">
-                                <form method="get" action="#">
-                                    <div>
-                                        <input type="text" name="s" id="search-text" value=""/>
-                                        <input type="submit" id="search-submit" value=""/>
-                                    </div>
-                                </form>
-                            </div>
-                            <div style="clear: both;">&nbsp;</div>
-                        </li>
-                        <li>
-                            <h2>Aliquam tempus</h2>
-                            <p>Mauris vitae nisl nec metus placerat perdiet est. Phasellus dapibus semper consectetuer
-                                hendrerit.</p>
-                        </li>
-                        <li>
-                            <h2>Categories</h2>
-                            <ul>
-                                <li><a href="#">Aliquam libero</a></li>
-                                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                                <li><a href="#">Metus aliquam pellentesque</a></li>
-                                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                                <li><a href="#">Urnanet non molestie semper</a></li>
-                                <li><a href="#">Proin gravida orci porttitor</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>Blogroll</h2>
-                            <ul>
-                                <li><a href="#">Aliquam libero</a></li>
-                                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                                <li><a href="#">Metus aliquam pellentesque</a></li>
-                                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                                <li><a href="#">Urnanet non molestie semper</a></li>
-                                <li><a href="#">Proin gravida orci porttitor</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h2>Archives</h2>
-                            <ul>
-                                <li><a href="#">Aliquam libero</a></li>
-                                <li><a href="#">Consectetuer adipiscing elit</a></li>
-                                <li><a href="#">Metus aliquam pellentesque</a></li>
-                                <li><a href="#">Suspendisse iaculis mauris</a></li>
-                                <li><a href="#">Urnanet non molestie semper</a></li>
-                                <li><a href="#">Proin gravida orci porttitor</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- end #sidebar -->
-                <div style="clear: both;">&nbsp;</div>
-            </div>
+            </c:forEach>
         </div>
+        <!-- end #content -->
     </div>
     <!-- end #page -->
 </div>
+
+<div id="index-wrapper">
+    <div id="index">
+
+        <ul>
+            <li><a href="/?pageIndex=${0}">首页</a></li>
+            <li><a href="/?pageIndex=${preIndex}">上一页</a></li>
+            <c:forEach var="i" begin="0" end="${pageMax}">
+                <li><a href="/?pageIndex=${i}" class="${i==pageIndex?'current_index_item':'normal'}"><c:out
+                        value="${i+1}"/></a></li>
+            </c:forEach>
+            <li><a href="/?pageIndex=${subIndex}">下一页</a></li>
+            <li><a href="/?pageIndex=${pageMax}">尾页</a></li>
+        </ul>
+    </div>
+    <!--End Index-->
+</div>
+
 <div id="footer">
     <p>&copy; 2016 ZKeps. | Design by <a href="http://www.fat246.com/" rel="nofollow">BrainySoon</a>.
     </p>
