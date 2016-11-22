@@ -42,6 +42,8 @@ public class IndexController {
             model.addAttribute("subIndex", pageIndex + 1);
         }
 
+        model.addAttribute("pageIndex", pageIndex);
+
         return "index";
     }
 
