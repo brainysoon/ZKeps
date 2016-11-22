@@ -6,6 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * Created by ken on 16-10-12.
@@ -22,8 +23,24 @@ public class IndexController {
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public String index(Model model) {
+    public String index(Model model, @RequestParam(value = "pageIndex", defaultValue = "0") int pageIndex) {
 
+        model.addAttribute("popKeps", kepsService.showPopKeps(pageIndex));
+
+        int pageMax = kepsService.getPopKepsPageMax();
+
+        model.addAttribute("pageMax", pageMax);
+        if (pageIndex > 0) {
+            model.addAttribute("preIndex", pageIndex - 1);
+        } else {
+            model.addAttribute("preIndex", pageIndex);
+        }
+
+        if (pageIndex >= pageMax) {
+            model.addAttribute("subIndex", pageIndex);
+        } else {
+            model.addAttribute("subIndex", pageIndex + 1);
+        }
 
         return "index";
     }
