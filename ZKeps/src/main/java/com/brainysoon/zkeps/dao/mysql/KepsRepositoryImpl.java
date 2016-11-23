@@ -41,6 +41,15 @@ public class KepsRepositoryImpl implements KepsRepository, RowMapper<Kep> {
     }
 
     @Override
+    public int addKep(Kep kep) {
+
+
+        return jdbcOperations.update(INSERT_KEP, kep.getKepId(),
+                kep.getKeperName(), kep.getKepTime(), kep.getKepTitle(), kep.getKepMsg(),
+                kep.getKepContent(), kep.getStars());
+    }
+
+    @Override
     public Kep mapRow(ResultSet rs, int rowNum) throws SQLException {
 
         Kep kep = new Kep();
@@ -54,5 +63,11 @@ public class KepsRepositoryImpl implements KepsRepository, RowMapper<Kep> {
         kep.setStars(Integer.valueOf(rs.getString(STARS)));
 
         return kep;
+    }
+
+    @Override
+    public List<Kep> findKepsByKeperName(String keperName) {
+
+        return jdbcOperations.query(QUERY_KEPS_BY_KEPER_NAME, new String[]{keperName}, this);
     }
 }

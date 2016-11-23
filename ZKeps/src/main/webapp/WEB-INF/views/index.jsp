@@ -55,7 +55,7 @@
             <c:forEach items="${popKeps}" var="popKeps">
                 <div class="post">
 
-                    <h2 class="title">主题：<a href="#"><c:out value="${popKeps.kepTitle}"/></a></h2>
+                    <h2 class="title">标题：<a href="#"><c:out value="${popKeps.kepTitle}"/></a></h2>
                     <p class="meta">
                         <span class="date">发布时间：<c:out value="${popKeps.kepTime}"/></span>
                         <span class="posted">作者：<a href="#"><c:out value="${popKeps.keperName}"/></a> </span>

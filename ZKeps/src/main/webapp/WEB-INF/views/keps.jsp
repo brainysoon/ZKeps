@@ -58,7 +58,7 @@
     <div id="page">
         <div id="page-bgtop">
             <div id="page-bgbtm">
-
+                <h4 style="align:center;color:red;"><c:out value="${codeStr}"/></h4>
                 <div id="content">
 
                     <form class="form-horizontal" role="form" method="post">
@@ -87,14 +87,22 @@
                     </form>
 
                     <ul class="spittleList">
-                        <c:forEach items="${keps}" var="kep">
-                            <li id="kep_<c:out value="kep.kepId"/>">
-                                <div class="kepMsg"><c:out value="${kep.kepMsg}"/></div>
-                                <div>
-                                    <span class="kepTime"><c:out value="${kep.kepTime}"/></span>
-                                    <span class="userName">(<c:out value="${kep.userName}"/>)</span>
+                        <c:forEach items="${keps}" var="keps">
+                            <div class="post">
+
+                                <h2 class="title">标题：<a href="#"><c:out value="${keps.kepTitle}"/></a></h2>
+                                <p class="meta">
+                                    <span class="date">发布时间：<c:out value="${keps.kepTime}"/></span>
+                                    <span class="posted">作者：<a href="#"><c:out
+                                            value="${keps.keperName}"/></a> </span>
+                                </p>
+                                <div style="clear: both;">&nbsp;</div>
+                                <div class="entry">
+                                    <p>摘要：<c:out value="${keps.kepMsg}"/></p>
+                                    <p>热度：<c:out value="${keps.stars}"/></p>
+                                    <p class="links"><a href="#" class="button">阅读更多</a></p>
                                 </div>
-                            </li>
+                            </div>
                         </c:forEach>
                     </ul>
                 </div>
