@@ -49,6 +49,8 @@ INSERT INTO keper
 VALUES ('user19', 'userpasswd1', 'test@coolbhu.cn', 'usertest', 'nomotto', '/var/local/avators/test.jpg', 0, 0);
 INSERT INTO keper
 VALUES ('user20', 'userpasswd1', 'test@coolbhu.cn', 'usertest', 'nomotto', '/var/local/avators/test.jpg', 0, 0);
+INSERT INTO keper
+VALUES ('brainy', 'bs19940115.', 'brainysoon@163.com', '聪聪小可爱', '走起', '/var/local/avators/brainy.jpg', 0, 1);
 
 DROP TABLE IF EXISTS kep;
 
