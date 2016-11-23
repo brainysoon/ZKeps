@@ -63,45 +63,45 @@ CREATE TABLE kep (
 );
 
 INSERT INTO kep
-VALUES ('201611131103324001', 'user1', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324001', 'user1', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 4);
 INSERT INTO kep
-VALUES ('201611131103324002', 'user2', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324002', 'user2', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 23);
 INSERT INTO kep
-VALUES ('201611131103324003', 'user3', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324003', 'user3', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 123);
 INSERT INTO kep
-VALUES ('201611131103324004', 'user4', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324004', 'user4', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 12);
 INSERT INTO kep
-VALUES ('201611131103324005', 'user5', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324005', 'user5', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 4);
 INSERT INTO kep
-VALUES ('201611131103324006', 'user6', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324006', 'user6', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 1);
 INSERT INTO kep
-VALUES ('201611131103324007', 'user7', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324007', 'user7', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 3);
 INSERT INTO kep
-VALUES ('201611131103324008', 'user8', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324008', 'user8', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 5);
 INSERT INTO kep
-VALUES ('201611131103324009', 'user9', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324009', 'user9', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 6);
 INSERT INTO kep
-VALUES ('201611131103324010', 'user10', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324010', 'user10', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent',7);
 INSERT INTO kep
-VALUES ('201611131103324011', 'user11', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324011', 'user11', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 10);
 INSERT INTO kep
-VALUES ('201611131103324012', 'user12', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324012', 'user12', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 12);
 INSERT INTO kep
-VALUES ('201611131103324013', 'user13', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324013', 'user13', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 34);
 INSERT INTO kep
-VALUES ('201611131103324014', 'user14', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324014', 'user14', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 34);
 INSERT INTO kep
-VALUES ('201611131103324015', 'user15', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324015', 'user15', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 35);
 INSERT INTO kep
-VALUES ('201611131103324016', 'user16', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324016', 'user16', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 53);
 INSERT INTO kep
-VALUES ('201611131103324017', 'user17', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324017', 'user17', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 45);
 INSERT INTO kep
-VALUES ('201611131103324018', 'user18', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324018', 'user18', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 67);
 INSERT INTO kep
 VALUES ('201611131103324019', 'user19', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
 INSERT INTO kep
-VALUES ('201611131103324020', 'user20', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 0);
+VALUES ('201611131103324020', 'user20', '2016-11-13', 'testTitle', 'kepmsg', 'nocontent', 34);
 
 DROP TABLE IF EXISTS comment;
 
