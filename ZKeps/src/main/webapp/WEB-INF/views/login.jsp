@@ -6,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -13,7 +15,7 @@
     <meta name="description" content="They Keep Us Alive !"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
-    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/resources/css/default.css" rel="stylesheet" type="text/css" media="screen"/>
 
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 
@@ -23,14 +25,23 @@
     <title>登录</title>
 </head>
 <body>
+<c:set var="isLogin" value="${sessionScope.keper!=null}"/>
+<c:if test="${isLogin}">
+    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
+    <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
+</c:if>
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="/">首页</a></li>
+            <li><a href="/">首页</a></li>
             <li><a href="/keps">发帖</a></li>
             <li><a href="/kepers">成员</a></li>
-            <li><a href="/login">登录</a></li>
-            <li><a href="/register">注册</a></li>
+            <li class="current_page_item">
+                <a href="${isLogin?myUrl:'/login'}">
+                    <c:out value="${isLogin?nickName:'登录'}"/></a></li>
+            <li><a href="${isLogin?'/logout':'/register'}">
+                <c:out value="${isLogin?'注销':'注册'}"/> </a></li>
             <li><a href="/about">关于</a></li>
         </ul>
     </div>
@@ -56,9 +67,9 @@
                     <form class="form-horizontal" role="form" method="post">
 
                         <div class="form-group">
-                            <label for="userName" class="col-sm-2 control-label">用户名：</label>
+                            <label for="keperName" class="col-sm-2 control-label">用户名：</label>
                             <div class="col-sm-10">
-                                <input type="text" name="userName" class="form-control" id="userName"
+                                <input type="text" name="keperName" class="form-control" id="keperName"
                                        placeholder="用户名/邮箱"/>
                             </div>
                         </div>
@@ -87,6 +98,10 @@
                             </div>
                         </div>
                     </form>
+
+                    <h4 class="error"><c:out value="${codeStr}"/>
+                        <c:out value="${codeStr==null?'':'错误代码:'}"/>
+                        <c:out value="${code}"/></h4>
                 </div>
                 <!-- end #content -->
                 <div style="clear: both;">&nbsp;</div>

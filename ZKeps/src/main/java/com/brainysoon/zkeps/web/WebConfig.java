@@ -10,6 +10,7 @@ import org.springframework.web.multipart.support.StandardServletMultipartResolve
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
@@ -22,6 +23,10 @@ import java.io.IOException;
 @EnableWebMvc
 @ComponentScan(basePackageClasses = {WebConfig.class, KepsRepository.class, KepsService.class})
 public class WebConfig extends WebMvcConfigurerAdapter {
+
+    private static final String CSS_LOCATION = "/resources/css/**";
+    private static final String JS_LOCATION = "/resources/js/**";
+    private static final String IMAGES_LOCATION = "/resources/images/**";
 
     @Bean
     public ViewResolver viewResolver() {
@@ -43,5 +48,13 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public MultipartResolver multipartResolver() throws IOException {
 
         return new StandardServletMultipartResolver();
+    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+
+        registry.addResourceHandler(CSS_LOCATION).addResourceLocations(CSS_LOCATION);
+        registry.addResourceHandler(JS_LOCATION).addResourceLocations(JS_LOCATION);
+        registry.addResourceHandler(IMAGES_LOCATION).addResourceLocations(IMAGES_LOCATION);
     }
 }

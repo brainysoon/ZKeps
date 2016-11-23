@@ -6,7 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="sf" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -14,7 +15,7 @@
     <meta name="description" content="They Keep Us Alive !"/>
     <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <!--<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans:400,300,700|Yesteryear" rel="stylesheet" type="text/css" />-->
-    <link href="/resources/css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="/resources/css/default.css" rel="stylesheet" type="text/css" media="screen"/>
 
     <link href="/resources/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,14 +25,22 @@
     <title>注册新用户</title>
 </head>
 <body>
+<c:set var="isLogin" value="${sessionScope.keper!=null}"/>
+<c:if test="${isLogin}">
+    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
+    <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
+</c:if>
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
-            <li class="current_page_item"><a href="/">首页</a></li>
+            <li><a href="/">首页</a></li>
             <li><a href="/keps">发帖</a></li>
             <li><a href="/kepers">成员</a></li>
-            <li><a href="/login">登录</a></li>
-            <li><a href="/register">注册</a></li>
+            <li><a href="${isLogin?myUrl:'/login'}">
+                <c:out value="${isLogin?nickName:'登录'}"/></a></li>
+            <li class="current_index_item"><a href="${isLogin?'/logout':'/register'}">
+                <c:out value="${isLogin?'注销':'注册'}"/> </a></li>
             <li><a href="/about">关于</a></li>
         </ul>
     </div>
@@ -54,29 +63,29 @@
 
                 <div id="content">
 
-                    <sf:form class="form-horizontal" role="form" method="post" commandName="keper">
+                    <form class="form-horizontal" role="form" method="post" commandName="keper">
 
                         <div class="form-group">
                             <label for="userName" class="col-sm-2 control-label">用户名&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <sf:input type="text" name="userName" class="form-control" id="userName"
-                                          placeholder="用户名" path="userName"/>
+                                <input type="text" name="userName" class="form-control" id="userName"
+                                       placeholder="用户名" path="userName"/>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="email" class="col-sm-2 control-label">邮箱&ensp;&ensp;&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <sf:input type="text" name="email" class="form-control" id="email"
-                                          placeholder="邮箱" path="email"/>
+                                <input type="text" name="email" class="form-control" id="email"
+                                       placeholder="邮箱" path="email"/>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label for="password" class="col-sm-2 control-label">密码&ensp;&ensp;&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <sf:input type="password" name="password" class="form-control" id="password"
-                                          placeholder="密码" path="password"/>
+                                <input type="password" name="password" class="form-control" id="password"
+                                       placeholder="密码" path="password"/>
                             </div>
                         </div>
 
@@ -94,15 +103,7 @@
                                 <button type="submit" class="btn btn-default">立即注册</button>
                             </div>
                         </div>
-
-                        <div class="form-group">
-
-                            <div class="col-sm-2 control-label">
-
-                                <sf:errors path="*" element="div" cssClass="errors"/>
-                            </div>
-                        </div>
-                    </sf:form>
+                    </form>
                 </div>
                 <!-- end #content -->
                 <div style="clear: both;">&nbsp;</div>
