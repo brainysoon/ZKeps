@@ -43,15 +43,20 @@ public class KepsController {
 
     @RequestMapping(method = RequestMethod.POST)
     public String addKeps(Model model, HttpSession httpSession,
-                          @RequestParam(value = "kepTitle", defaultValue = "UnTitle") String kepTitle,
-                          @RequestParam(value = "kepMsg", defaultValue = "UnMsg") String kepMsg,
-                          @RequestParam(value = "kepContent", defaultValue = "UnContent") String kepContent) {
+                          @RequestParam(value = "kepTitle") String kepTitle,
+                          @RequestParam(value = "kepMsg") String kepMsg,
+                          @RequestParam(value = "kepContent") String kepContent) {
 
         Keper keper = (Keper) httpSession.getAttribute("keper");
 
         if (keper == null) {
 
             model.addAttribute("codeStr", "用户没有登录,登录后可发帖！");
+        } else if (kepTitle == null || kepMsg == null || kepContent == null
+                || kepTitle.equals("") || kepMsg.equals("") || kepContent.equals("")) {
+
+            model.addAttribute("codeStr", "标题，摘要和内容都不能为空!!!");
+            model.addAttribute("keps", kepsService.findKepsByKeperName(keper.getKeperName()));
         } else {
 
             int code = kepsService.addKeps(keper, kepTitle, kepMsg, kepContent);
