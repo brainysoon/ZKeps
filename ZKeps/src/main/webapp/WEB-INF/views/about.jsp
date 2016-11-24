@@ -27,7 +27,7 @@
 <body>
 <c:set var="isLogin" value="${sessionScope.keper!=null}"/>
 <c:if test="${isLogin}">
-    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="preUrl" value="/kepers/keperName"/>
     <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
     <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
 </c:if>

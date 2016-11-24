@@ -26,7 +26,7 @@
 <body>
 <c:set var="isLogin" value="${sessionScope.keper!=null}"/>
 <c:if test="${isLogin}">
-    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="preUrl" value="/kepers/keperName"/>
     <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
     <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
 </c:if>
@@ -87,20 +87,21 @@
                     </form>
 
                     <ul class="spittleList">
-                        <c:forEach items="${keps}" var="keps">
+                        <c:forEach items="${keps}" var="kep">
                             <div class="post">
 
-                                <h2 class="title">标题：<a href="#"><c:out value="${keps.kepTitle}"/></a></h2>
+                                <h2 class="title">标题：<a href="/keps/${kep.kepId}"><c:out value="${kep.kepTitle}"/></a>
+                                </h2>
                                 <p class="meta">
-                                    <span class="date">发布时间：<c:out value="${keps.kepTime}"/></span>
-                                    <span class="posted">作者：<a href="#"><c:out
-                                            value="${keps.keperName}"/></a> </span>
+                                    <span class="date">发布时间：<c:out value="${kep.kepTime}"/></span>
+                                    <span class="posted">作者：<a href="/kepers/${kep.keperName}"><c:out
+                                            value="${kep.keperName}"/></a> </span>
                                 </p>
                                 <div style="clear: both;">&nbsp;</div>
                                 <div class="entry">
-                                    <p>摘要：<c:out value="${keps.kepMsg}"/></p>
-                                    <p>热度：<c:out value="${keps.stars}"/></p>
-                                    <p class="links"><a href="#" class="button">阅读更多</a></p>
+                                    <p>摘要：<c:out value="${kep.kepMsg}"/></p>
+                                    <p>热度：<c:out value="${kep.stars}"/></p>
+                                    <p class="links"><a href="/keps/${kep.kepId}" class="button">阅读更多</a></p>
                                 </div>
                             </div>
                         </c:forEach>

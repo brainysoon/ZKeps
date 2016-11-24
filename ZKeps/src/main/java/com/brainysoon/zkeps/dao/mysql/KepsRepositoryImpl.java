@@ -54,7 +54,7 @@ public class KepsRepositoryImpl implements KepsRepository, RowMapper<Kep> {
 
         Kep kep = new Kep();
 
-        kep.setKeperName(rs.getString(KEP_ID));
+        kep.setKepId(rs.getString(KEP_ID));
         kep.setKeperName(rs.getString(KEPER_NAME));
         kep.setKepTime(Timestamp.valueOf(rs.getString(KEP_TIME)));
         kep.setKepTitle(rs.getString(KEP_TITLE));
@@ -69,5 +69,20 @@ public class KepsRepositoryImpl implements KepsRepository, RowMapper<Kep> {
     public List<Kep> findKepsByKeperName(String keperName) {
 
         return jdbcOperations.query(QUERY_KEPS_BY_KEPER_NAME, new String[]{keperName}, this);
+    }
+
+    @Override
+    public Kep findKepByKepId(String kepId) {
+
+        Kep kep = null;
+
+        try {
+            kep = jdbcOperations.queryForObject(QUERY_KEP_BY_KEP_ID, new String[]{kepId}, this);
+        } catch (Exception e) {
+
+            e.printStackTrace();
+        }
+
+        return kep;
     }
 }

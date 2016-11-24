@@ -61,6 +61,11 @@ a:hover {
     color: #FF4040;
 }
 
+#avator {
+    width: 100px;
+    height: 100px;
+}
+
 /* Header */
 
 #header-wrapper {

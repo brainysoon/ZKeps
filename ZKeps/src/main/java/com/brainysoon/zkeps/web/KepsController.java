@@ -1,10 +1,12 @@
 package com.brainysoon.zkeps.web;
 
+import com.brainysoon.zkeps.bean.Kep;
 import com.brainysoon.zkeps.bean.Keper;
 import com.brainysoon.zkeps.service.KepsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -65,5 +67,27 @@ public class KepsController {
         }
 
         return "keps";
+    }
+
+    @RequestMapping(value = "/{kepId}", method = RequestMethod.GET)
+    public String kep(Model model,
+                      @PathVariable(value = "kepId") String kepId) {
+
+        if (kepId == null && kepId.equals("")) {
+
+            model.addAttribute("codeStr", "参数出错!");
+            return "keps";
+        }
+
+        Kep kep = kepsService.findKepByKepId(kepId);
+
+        if (kep == null) {
+            model.addAttribute("codeStr", "不存在该帖子！");
+            return "keps";
+        } else {
+
+            model.addAttribute("kep", kep);
+            return "kep";
+        }
     }
 }

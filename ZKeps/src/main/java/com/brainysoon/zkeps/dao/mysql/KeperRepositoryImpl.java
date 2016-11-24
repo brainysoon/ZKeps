@@ -9,6 +9,7 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 /**
  * Created by brainy on 16-11-20.
@@ -62,5 +63,24 @@ public class KeperRepositoryImpl implements KeperRepository, RowMapper<Keper> {
         keper.setSlead(rs.getInt(SLEAD));
 
         return keper;
+    }
+
+    @Override
+    public int addKeper(Keper keper) {
+        return jdbcOperations.update(ADD_KEPER,
+                keper.getKeperName(),
+                keper.getPassword(),
+                keper.getEmail(),
+                keper.getNickName(),
+                keper.getMotto(),
+                keper.getAvator(),
+                keper.getStars(),
+                keper.getSlead()
+        );
+    }
+
+    @Override
+    public List<Keper> findAllKepers() {
+        return jdbcOperations.query(QUERY_ALL_KEPERS, this);
     }
 }

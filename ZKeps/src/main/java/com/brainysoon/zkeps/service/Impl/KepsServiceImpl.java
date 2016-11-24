@@ -94,4 +94,9 @@ public class KepsServiceImpl implements KepsService {
 
         return kepsRepository.findKepsByKeperName(keperName);
     }
+
+    @Override
+    public Kep findKepByKepId(String kepId) {
+        return kepsRepository.findKepByKepId(kepId);
+    }
 }

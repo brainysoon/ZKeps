@@ -59,10 +59,4 @@ public class StatusController {
 
         return "redirect:/";
     }
-
-    @RequestMapping(value = "/register", method = RequestMethod.GET)
-    public String register() {
-
-        return "register";
-    }
 }

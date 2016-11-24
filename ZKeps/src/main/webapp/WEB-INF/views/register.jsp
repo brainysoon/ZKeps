@@ -27,7 +27,7 @@
 <body>
 <c:set var="isLogin" value="${sessionScope.keper!=null}"/>
 <c:if test="${isLogin}">
-    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="preUrl" value="/kepers/keperName"/>
     <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
     <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
 </c:if>
@@ -61,15 +61,24 @@
         <div id="page-bgtop">
             <div id="page-bgbtm">
 
+                <h4 class="error" style="color:red;"><c:out value="${codeStr}"/></h4>
                 <div id="content">
 
                     <form class="form-horizontal" role="form" method="post" commandName="keper">
 
                         <div class="form-group">
-                            <label for="userName" class="col-sm-2 control-label">用户名&ensp;&ensp;：</label>
+                            <label for="keperName" class="col-sm-2 control-label">用户名&ensp;&ensp;：</label>
                             <div class="col-sm-10">
-                                <input type="text" name="userName" class="form-control" id="userName"
-                                       placeholder="用户名" path="userName"/>
+                                <input type="text" name="keperName" class="form-control" id="keperName"
+                                       placeholder="英文/数字/下划线" path="keperName"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nickName" class="col-sm-2 control-label">昵称&ensp;&ensp;&ensp;&ensp;：</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="nickName" class="form-control" id="nickName"
+                                       placeholder="中英文以及下划线" path="nickName"/>
                             </div>
                         </div>
 
@@ -82,10 +91,18 @@
                         </div>
 
                         <div class="form-group">
+                            <label for="motto" class="col-sm-2 control-label">个性签名：</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" rows="3" name="motto" id="motto"
+                                          placeholder="个性签名"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                             <label for="password" class="col-sm-2 control-label">密码&ensp;&ensp;&ensp;&ensp;：</label>
                             <div class="col-sm-10">
                                 <input type="password" name="password" class="form-control" id="password"
-                                       placeholder="密码" path="password"/>
+                                       placeholder="英文/数字/符号" path="password"/>
                             </div>
                         </div>
 

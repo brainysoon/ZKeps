@@ -27,7 +27,7 @@
 <body>
 <c:set var="isLogin" value="${sessionScope.keper!=null}"/>
 <c:if test="${isLogin}">
-    <c:set var="preUrl" value="/keper/keperName"/>
+    <c:set var="preUrl" value="/kepers/keperName"/>
     <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
     <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
 </c:if>
@@ -63,6 +63,18 @@
 
                 <div id="content">
 
+                    <c:forEach items="${kepers}" var="keper">
+                        <div class="post">
+
+                            <h4>用户名：<a href="/kepers/${keper.keperName}"><c:out
+                                    value="${keper.keperName}"/></a></h4>
+                            <h4>昵称：<c:out value="${keper.nickName}"/></h4>
+                            <div style="clear: both;">&nbsp;</div>
+                            <div class="entry">
+                                <p>个性签名：<c:out value="${keper.motto}"/></p>
+                            </div>
+                        </div>
+                    </c:forEach>
 
                 </div>
                 <!-- end #content -->

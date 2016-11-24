@@ -40,4 +40,10 @@ public interface KepsService {
      * @return //这个人发的所有帖子
      */
     List<Kep> findKepsByKeperName(String keperName);
+
+    /**
+     * @param kepId
+     * @return //返回具体的帖子
+     */
+    Kep findKepByKepId(String kepId);
 }
