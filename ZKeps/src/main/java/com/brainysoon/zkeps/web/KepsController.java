@@ -2,6 +2,7 @@ package com.brainysoon.zkeps.web;
 
 import com.brainysoon.zkeps.bean.Kep;
 import com.brainysoon.zkeps.bean.Keper;
+import com.brainysoon.zkeps.service.CommentsService;
 import com.brainysoon.zkeps.service.KepsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,6 +22,12 @@ import javax.servlet.http.HttpSession;
 public class KepsController {
 
     private KepsService kepsService;
+    private CommentsService commentsService;
+
+    @Autowired
+    public void setCommentsService(CommentsService commentsService) {
+        this.commentsService = commentsService;
+    }
 
     @Autowired
     public void setKepsService(KepsService kepsService) {
@@ -87,6 +94,34 @@ public class KepsController {
         } else {
 
             model.addAttribute("kep", kep);
+            model.addAttribute("comments", commentsService.findCommentsByKepId(kepId));
+
+            return "kep";
+        }
+    }
+
+    @RequestMapping(value = "/{kepId}", method = RequestMethod.POST)
+    public String addComment(Model model,
+                             @PathVariable(value = "kepId") String kepId, HttpSession httpSession,
+                             @RequestParam(value = "content") String content) {
+
+        Keper keper = (Keper) httpSession.getAttribute("keper");
+
+        if (keper == null) {
+
+            model.addAttribute("codeStr", "登录过后才能够发表评论！");
+
+            return "kep";
+        }
+
+        int code = commentsService.addComment(keper, kepId, content);
+
+        if (code > 0) {
+
+            return "redirect:/keps/" + kepId;
+        } else {
+
+            model.addAttribute("codeStr", "评论失败,位置错误！");
             return "kep";
         }
     }

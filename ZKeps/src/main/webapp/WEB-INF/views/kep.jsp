@@ -50,7 +50,7 @@
 <div id="header-wrapper">
     <div id="header">
         <div id="logo">
-            <h1><a href="#">关于</a></h1>
+            <h1><a href="#">暖贴详情</a></h1>
         </div>
     </div>
 </div>
@@ -62,6 +62,8 @@
             <div id="page-bgbtm">
 
                 <div id="content">
+
+                    <h4 style="color:red;"><c:out value="${codeStr}"/></h4>
 
                     <div class="post">
 
@@ -77,6 +79,26 @@
                             <p>内容：<c:out value="${kep.kepContent}"/></p><br/>
                             <p>热度：<c:out value="${kep.stars}"/></p>
                         </div>
+                        <h2>所有评论：</h2><br/>
+                        <c:forEach items="${comments}" var="comment">
+
+                            <strong><c:out value="${comment.nickName}"/></strong>&ensp;&ensp;评论说：&ensp;&ensp;<c:out
+                                value="${comment.content}"/><br/>
+                        </c:forEach>
+                        <br/><br/>
+
+                        <form class="form-horizontal" role="form" method="post">
+
+                            <div class="form-group">
+                                <label for="commentcontent">发表评论</label>
+                                <textarea class="form-control" rows="3" name="content" id="commentcontent"
+                                          placeholder="登录过后才可以发表评论"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-default">&ensp;&ensp;发表评论&ensp;&ensp;</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <!-- end #content -->

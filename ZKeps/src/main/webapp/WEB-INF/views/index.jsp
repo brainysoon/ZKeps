@@ -65,7 +65,9 @@
                     <div class="entry">
                         <p>摘要：<c:out value="${kep.kepMsg}"/></p>
                         <p>热度：<c:out value="${kep.stars}"/></p>
-                        <p class="links"><a href="/keps/${kep.kepId}" class="button">阅读更多</a></p>
+                        <span class="links"><a href="/keps/${kep.kepId}" class="button">阅读更多</a></span>
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+                        <span class="links"><a href="/keps/${kep.kepId}" class="button">查看评论</a></span>
                     </div>
                 </div>
             </c:forEach>
