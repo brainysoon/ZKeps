@@ -13,6 +13,7 @@ public interface KepsRepository {
     String INSERT_KEP = "INSERT INTO kep VALUES(?,?,?,?,?,?,?)";
     String QUERY_KEPS_BY_KEPER_NAME = "SELECT * FROM kep WHERE keperName=? ORDER BY kepId DESC";
     String QUERY_KEP_BY_KEP_ID = "SELECT * FROM kep WHERE kepId=?";
+    String UPDATE_KEP_STARS = "UPDATE kep SET stars=stars+? WHERE kepId=?";
 
     /**
      * @return //找到流行的帖子 //暂时规定 stars >1 为流行的帖子
@@ -37,4 +38,11 @@ public interface KepsRepository {
      * @return //返回具体的帖子
      */
     Kep findKepByKepId(String kepId);
+
+    /**
+     * @param kepId
+     * @param up    //增加热度
+     * @return //返回状态
+     */
+    int updateKepStars(String kepId, int up);
 }

@@ -85,4 +85,9 @@ public class KepsRepositoryImpl implements KepsRepository, RowMapper<Kep> {
 
         return kep;
     }
+
+    @Override
+    public int updateKepStars(String kepId, int up) {
+        return jdbcOperations.update(UPDATE_KEP_STARS, up, kepId);
+    }
 }

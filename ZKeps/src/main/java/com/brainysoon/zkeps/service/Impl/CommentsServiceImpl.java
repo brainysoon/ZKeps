@@ -3,6 +3,7 @@ package com.brainysoon.zkeps.service.Impl;
 import com.brainysoon.zkeps.bean.Comment;
 import com.brainysoon.zkeps.bean.Keper;
 import com.brainysoon.zkeps.dao.CommentsRepository;
+import com.brainysoon.zkeps.dao.KepsRepository;
 import com.brainysoon.zkeps.service.CommentsService;
 import com.brainysoon.zkeps.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,12 @@ import java.util.List;
 public class CommentsServiceImpl implements CommentsService {
 
     private CommentsRepository commentsRepository;
+    private KepsRepository kepsRepository;
+
+    @Autowired
+    public void setKepsRepository(KepsRepository kepsRepository) {
+        this.kepsRepository = kepsRepository;
+    }
 
     @Autowired
     public void setCommentsRepository(CommentsRepository commentsRepository) {
@@ -39,6 +46,14 @@ public class CommentsServiceImpl implements CommentsService {
         comment.setNickName(keper.getNickName());
         comment.setContent(content);
 
-        return commentsRepository.addCoomment(comment);
+        int code = commentsRepository.addCoomment(comment);
+
+        if (code > 0) {
+
+            //增加热度
+            kepsRepository.updateKepStars(kepId, 1);
+        }
+
+        return code;
     }
 }
