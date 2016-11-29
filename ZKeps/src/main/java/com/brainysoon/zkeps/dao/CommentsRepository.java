@@ -9,7 +9,7 @@ import java.util.List;
  */
 public interface CommentsRepository {
 
-    String QUERY_COMMENTS_BY_KEP_ID = "SELECT * FROM comment WHERE kepId=?";
+    String QUERY_COMMENTS_BY_KEP_ID = "SELECT * FROM comment WHERE kepId=? ORDER BY commentId DESC";
 
     String ADD_COMMENT = "INSERT INTO comment VALUES(?,?,?,?,?)";
 

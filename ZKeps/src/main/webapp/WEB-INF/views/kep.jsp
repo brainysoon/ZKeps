@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
@@ -82,7 +83,13 @@
                         <h2>所有评论：</h2><br/>
                         <c:forEach items="${comments}" var="comment">
 
-                            <strong><c:out value="${comment.nickName}"/></strong>&ensp;&ensp;评论说：&ensp;&ensp;<c:out
+                            <c:set var="strtime" value="${fn:substring(comment.commentId, 0, 14)}"/>
+                            <fmt:parseDate value="${strtime}" var="time" pattern="yyyyMMddHHmmss"/>
+                            <fmt:formatDate value="${time}" var="formatTime" pattern="yyyy年MM月dd日HH时mm分ss秒"/>
+
+                            <strong><c:out value="${comment.nickName}"/></strong>
+                            <span style="font-size: xx-small;">(<c:out value="${formatTime}"/> )</span>
+                            &ensp;&ensp;评论说：&ensp;&ensp;<c:out
                                 value="${comment.content}"/><br/>
                         </c:forEach>
                         <br/><br/>
