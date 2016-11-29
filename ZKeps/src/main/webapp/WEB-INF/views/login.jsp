@@ -31,6 +31,15 @@
     <c:set var="myUrl" value="${fn:replace(preUrl,'keperName',sessionScope.keper.keperName)}"/>
     <c:set var="nickName" value="${sessionScope.keper.nickName}"/>
 </c:if>
+
+<c:forEach items="${pageContext.request.cookies}" var="cooks">
+    <c:if test="${fn:contains(cooks.name,'keperName')}">
+        <c:set var="keperName" value="${cooks.value}"/>
+    </c:if>
+    <c:if test="${fn:contains(cooks.name,'password')}">
+        <c:set var="password" value="${cooks.value}"/>
+    </c:if>
+</c:forEach>
 <div id="menu-wrapper">
     <div id="menu">
         <ul>
@@ -70,7 +79,7 @@
                             <label for="keperName" class="col-sm-2 control-label">用户名：</label>
                             <div class="col-sm-10">
                                 <input type="text" name="keperName" class="form-control" id="keperName"
-                                       placeholder="用户名/邮箱"/>
+                                       placeholder="用户名/邮箱" value="${keperName}"/>
                             </div>
                         </div>
 
@@ -78,7 +87,7 @@
                             <label for="password" class="col-sm-2 control-label">密码：</label>
                             <div class="col-sm-10">
                                 <input type="password" name="password" class="form-control" id="password"
-                                       placeholder="密码"/>
+                                       placeholder="密码" value="${password}"/>
                             </div>
                         </div>
 
@@ -86,7 +95,7 @@
                             <div class="col-sm-offset-2 col-sm-10">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" checked="true">请记住我
+                                        <input type="checkbox" checked="true" name="remember">请记住我
                                     </label>
                                 </div>
                             </div>
